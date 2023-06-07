@@ -1,0 +1,20 @@
+.app {
+    background-color:#F3F7FA;
+}
+
+.image {
+    display: block;
+    margin: 50px auto 50px;
+}
+
+.app-content {
+    display: flex;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 760px;
+}
+
+.tickets {
+    display: flex;
+    flex-direction: column;
+}

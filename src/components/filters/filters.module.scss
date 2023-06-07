@@ -1,0 +1,60 @@
+.filter {
+    display: flex;
+    flex-direction: column;
+    height: 252px;
+    width: 232px;
+    list-style: none;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 0;
+    padding: 20px 0;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+
+    li {
+        padding: 20px;
+    }
+
+    &__header {
+        color: #4A4A4A;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 12px;
+        letter-spacing: .5px;
+        padding-left: 20px;
+        margin-bottom: 10px;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        font-size: 13px;
+        height: 40px;
+        line-height: 20px;
+
+        &:hover {
+            background-color: #F1FCFF;
+        }
+
+        label {
+            display: flex;
+            align-items: center;
+            height: 40px;
+            width: 100%;
+            cursor: pointer;
+        }
+
+        input {
+            height: 20px;
+            width: 20px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        span {
+            display: inline-block;
+            line-height: 20px;
+        }
+    }
+}
