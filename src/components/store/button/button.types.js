@@ -1,0 +1,3 @@
+export const SET_BUTTON_ACTION = {
+  ADD_FIVE_TICKETS: 'button/ADD_FIVE_TICKETS',
+};
