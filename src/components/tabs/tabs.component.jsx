@@ -22,13 +22,13 @@ const Tabs = () => {
   return (
     <Space.Compact>
       <Button className={cheapSortActiveClass} onClick={() => dispatch(setCheapSort())}>
-        Самый дешёвый
+        САМЫЙ ДЕШЁВЫЙ
       </Button>
       <Button className={fastSortActiveClass} onClick={() => dispatch(setFastSort())}>
-        Самый быстрый
+        САМЫЙ БЫСТРЫЙ
       </Button>
       <Button className={optimalSortActiveClass} onClick={() => dispatch(setOptimalSort())}>
-        Оптимальный
+        ОПТИМАЛЬНЫЙ
       </Button>
     </Space.Compact>
   );
