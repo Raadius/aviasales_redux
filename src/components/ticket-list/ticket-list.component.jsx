@@ -75,8 +75,6 @@ const TicketList = () => {
   };
 
   const ticketsToShow = filteredTicketsByFilter(ticketList);
-  console.log(ticketsToShow);
-
   const showLoadingBar = isLoading ? <BarLoader className={classes.loader} color="#2196F3" width="500px" /> : null;
   const showButtonOrNullResult =
     ticketsToShow.length === 0 && !isLoading ? (
