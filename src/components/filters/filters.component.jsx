@@ -7,8 +7,8 @@ import {
   setOneStop,
   setTwoStops,
   setThreeStops,
-} from '../store/filters/filters.actions';
-import { selectFilters } from '../store/filters/filters.selector';
+} from '../../store/filters/filters.actions';
+import { selectFilters } from '../../store/filters/filters.selector';
 
 import classes from './filters.module.scss';
 const Filters = () => {

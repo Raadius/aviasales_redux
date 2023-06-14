@@ -3,12 +3,12 @@ import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import BarLoader from 'react-spinners/BarLoader';
 
-import { selectedTabs } from '../store/tabs/tabs.selector';
-import { fetchTicketsAsync } from '../store/tickets/tickets.action';
-import { selectTickets, selectError, selectIsLoading } from '../store/tickets/tickets.selector';
-import { selectFilters } from '../store/filters/filters.selector';
-import { selectQuantity } from '../store/button/button.selector';
-import { setButtonAction } from '../store/button/button.actions';
+import { selectedTabs } from '../../store/tabs/tabs.selector';
+import { fetchTicketsAsync } from '../../store/tickets/tickets.action';
+import { selectTickets, selectError, selectIsLoading } from '../../store/tickets/tickets.selector';
+import { selectFilters } from '../../store/filters/filters.selector';
+import { selectQuantity } from '../../store/button/button.selector';
+import { setButtonAction } from '../../store/button/button.actions';
 import Tickets from '../tickets/tickets.component';
 
 import classes from './ticket-list.module.scss';
@@ -26,7 +26,7 @@ const TicketList = () => {
   const slicer = useSelector(selectQuantity);
 
   const { cheapSort, fastSort, optimalSort } = tabs;
-  const { allTickets, directFlight, oneStop, twoStops, threeStops } = filters;
+  const { directFlight, oneStop, twoStops, threeStops } = filters;
   const { quantity } = slicer;
 
   const filteredTicketsByTabs = (ticketsList) => {

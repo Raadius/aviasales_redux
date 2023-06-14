@@ -2,8 +2,8 @@
 import { Button, Space } from 'antd';
 import { useDispatch, useSelector } from 'react-redux';
 
-import { selectedTabs } from '../store/tabs/tabs.selector';
-import { setCheapSort, setFastSort, setOptimalSort } from '../store/tabs/tabs.actions';
+import { selectedTabs } from '../../store/tabs/tabs.selector';
+import { setCheapSort, setFastSort, setOptimalSort } from '../../store/tabs/tabs.actions';
 
 import classes from './tabs.module.scss';
 

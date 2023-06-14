@@ -1,6 +1,6 @@
 /* eslint-disable no-undef */
 import { createAction } from '../../utils/reducer.utils';
-import AviasalesService from '../../api-services/api-service.js';
+import AviasalesService from '../../components/api-services/api-service';
 
 import { TICKETS_ACTION_TYPES } from './tickets.type.js';
 
@@ -29,8 +29,8 @@ export const fetchTicketsAsync = () => async (dispatch) => {
       dispatch(fetchTicketsAsync());
     }
   } catch (error) {
-    console.log(error.message);
-    if (error.code === 'ERR_BAD_RESPONSE') {
+    console.log(error);
+    if (error instanceof TypeError) {
       dispatch(fetchTicketsAsync());
     } else {
       dispatch(fetchTicketsFailure(error));
