@@ -74,6 +74,7 @@ const TicketList = () => {
     return newArr;
   };
 
+  //i'm not conosle logging this
   const ticketsToShow = filteredTicketsByFilter(ticketList);
   const showLoadingBar = isLoading ? <BarLoader className={classes.loader} color="#2196F3" width="500px" /> : null;
   const showButtonOrNullResult =
