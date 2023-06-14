@@ -1,1 +1,1 @@
-# aviasales-redux-nu.vercel.app
+# https://aviasales-redux-nu.vercel.app/
