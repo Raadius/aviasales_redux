@@ -58,7 +58,6 @@ const TicketList = () => {
 
   const filteredTicketsByFilter = (ticketsList) => {
     const filteredByTabs = filteredTicketsByTabs(ticketsList);
-    console.log(filteredByTabs);
 
     const noTransition = directFlight ? 0 : null;
     const oneTransition = oneStop ? 1 : null;
@@ -74,7 +73,6 @@ const TicketList = () => {
     return newArr;
   };
 
-  //i'm not conosle logging this
   const ticketsToShow = filteredTicketsByFilter(ticketList);
   const showLoadingBar = isLoading ? <BarLoader className={classes.loader} color="#2196F3" width="500px" /> : null;
   const showButtonOrNullResult =
