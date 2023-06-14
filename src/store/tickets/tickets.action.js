@@ -29,7 +29,6 @@ export const fetchTicketsAsync = () => async (dispatch) => {
       dispatch(fetchTicketsAsync());
     }
   } catch (error) {
-    console.log(error);
     if (error instanceof TypeError) {
       dispatch(fetchTicketsAsync());
     } else {

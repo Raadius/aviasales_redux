@@ -1,0 +1,28 @@
+.visible {
+    display: inline;
+    position: fixed; 
+    width: 3%;
+    right: 18%;
+    bottom: 12%;
+    height: 20px;
+    font-size: 3rem;
+    z-index: 1;
+    max-height: 20px;
+    cursor: pointer;
+    color: #2196f3;
+    z-index: 0;
+
+    @media (max-width: 1300px) {
+        position: fixed;
+        right: 12%;
+        bottom: 7.5%;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.button span {
+    width: 100%;
+}

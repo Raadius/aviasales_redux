@@ -1,11 +1,10 @@
-/* eslint-disable no-unused-vars */
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import BarLoader from 'react-spinners/BarLoader';
 
 import { selectedTabs } from '../../store/tabs/tabs.selector';
 import { fetchTicketsAsync } from '../../store/tickets/tickets.action';
-import { selectTickets, selectError, selectIsLoading } from '../../store/tickets/tickets.selector';
+import { selectTickets, selectIsLoading } from '../../store/tickets/tickets.selector';
 import { selectFilters } from '../../store/filters/filters.selector';
 import { selectQuantity } from '../../store/button/button.selector';
 import { setButtonAction } from '../../store/button/button.actions';
@@ -19,7 +18,6 @@ const TicketList = () => {
   }, [dispatch]);
 
   const ticketList = useSelector(selectTickets);
-  const errorStatus = useSelector(selectError);
   const isLoading = useSelector(selectIsLoading);
   const filters = useSelector(selectFilters);
   const tabs = useSelector(selectedTabs);
