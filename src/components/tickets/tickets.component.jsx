@@ -34,8 +34,6 @@ const Tickets = ({ price, carrier, segments }) => {
       ? `${priceOfTicket.slice(0, 3)} ${priceOfTicket.slice(3, 6)}`
       : `${priceOfTicket.slice(0, 2)} ${priceOfTicket.slice(2, 5)}`;
 
-  console.log(setPrice);
-
   return (
     <div className={classes.tickets}>
       <div className={classes['tickets__header']}>
